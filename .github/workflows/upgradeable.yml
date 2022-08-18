@@ -18,6 +18,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.UPGRADEABLE_REPO_ACCESS_TOKEN }}
-          repository: chiru-labs/ERC721A-Upgradeable
+          repository: skarard/ERC721A-Upgradeable
           event-type: Update
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
