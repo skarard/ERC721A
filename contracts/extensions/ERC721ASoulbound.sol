@@ -23,8 +23,8 @@ abstract contract ERC721ASoulbound is ERC721ABurnable, IERC721ASoulbound {
     function _beforeTokenTransfers(
         address from,
         address to,
-        uint256 startTokenId,
-        uint256 quantity
+        uint256,
+        uint256
     ) internal virtual override {
         if (from != address(0)) 
             if (to != address(0)) 
